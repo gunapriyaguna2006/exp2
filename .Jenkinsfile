@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "gunapriyaguna2006/docimg"
+        DOCKER_IMAGE = "gunapriyaguna2006/guna"
     }
 
     stages {
         stage('Clone Repository') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/gunapriyaguna2006/docker2026.git'
+                    url: 'https://github.com/gunapriyaguna2006/exp2.git'
             }
         }
 
